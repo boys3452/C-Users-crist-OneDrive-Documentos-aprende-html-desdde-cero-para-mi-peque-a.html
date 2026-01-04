@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Ti, Amor</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(180deg,#0f0f0f,#1c1c1c);
+    color:#f5f5f5;
+    text-align:center;
+}
+
+h1{
+    margin-top:40px;
+    letter-spacing:2px;
+}
+
+.carta{
+    width:260px;
+    height:180px;
+    margin:50px auto;
+    background:#b38b59;
+    cursor:pointer;
+    position:relative;
+    border-radius:10px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.carta::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#d4af7a;
+    clip-path: polygon(0 0,100% 0,50% 50%);
+}
+
+.texto-carta{
+    display:none;
+    background:#fff;
+    color:#000;
+    padding:30px;
+    margin:20px;
+    border-radius:10px;
+}
+
+.linea{
+    width:4px;
+    height:300px;
+    background:#b38b59;
+    margin:40px auto;
+}
+
+.fecha{
+    margin:20px 0;
+}
+
+form{
+    background:#222;
+    padding:30px;
+    margin:40px auto;
+    width:80%;
+    max-width:400px;
+    border-radius:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    background:#b38b59;
+    border:none;
+    padding:12px;
+    width:100%;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Para el amor de mi vida</h1>
+<div class="carta" id="cartaCerrada">
+  💌 Toca para abrir
+</div>
+
+<div class="texto-carta" id="cartaAbierta"
+<p>
+Amor,<br><br>
+Hola amor 🥰 👋 Esta carta no es perfecta, pero es honesta.  
+tambien desde que llegaste, mis días tienen sentido,  
+y aunque a veces me caiga, contigo siempre quiero levantarme, tambien quiero decirte que eres una persona muy linda 💕 eres una chica maravillosa ✨una chica que me a echo muy feliz 💗✨y que gracias a ti estoy volviendo a creer en el amor🥺💞se que no lo demuestro mucho ❤️‍🩹pero te aseguro que estoy plenamente enamorado de ti 💗✨no se que seria de mi vida sin ti💔te hice esta pagina por que de verdad me importas mucho mi Citlali 🥺💖y quiero que sepas que estaré contigo en las buenas 👼y malas 😷se que es muy poco y que te mereces mucho💕te mereces el mundo entero🌏🗽otra cosita quiero que me digas la verdad si te gusta alguien😥o si ya no te llamo la atención dimelo🥺prefiero saber la verdad que estar en la mentira ❤️‍🩹por ahora estoy demostrando lo que siento❤️‍🩹💞, se que no es justo pero no quiero dar todo🏆por que si me da miedo ser lastimado🤕 pero de lo que si estoy seguro es que aun así soy feliz contigo❤️‍🩹🥺amo hablar contigo ✨💗te amo amor🥰  
+<br><br>
+Te elijo hoy, mañana y cuando el tiempo se canse de contar años.
+</p>
+</div>
+
+<h2>Nuestra historia</h2>
+
+<h2 class="titulo-linea">Nuestra Línea de Amor</h2>
+
+<div class="timeline">
+
+  <div class="evento izquierda">
+    💑 Empezamos a conocernos – <b>📅17 de noviembre del 2025</b>
+  </div>
+
+  <div class="evento derecha">
+    🌸 fecha que anduvimos– <b>23 de noviembre del 2025💞</b>
+  </div>
+
+  <div class="evento izquierda">
+    🎉 Grandes aventuras – <b>MUY PRONTO</b>
+  </div>
+
+  <div class="evento derecha">
+    🏡 Nuestros sueños – <b>Ser padres de una gran niña</b>
+  </div>
+
+  <div class="evento izquierda">
+    💍 Nuestro dia feliz – <b>SIEMPRE✨</b>
+  
+</div>
+
+</div>
+
+<h2>Escríbeme algo</h2>
+
+<form action="https://formspree.io/f/mnjnozya" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <textarea name="mensaje" placeholder="Escríbeme lo que sientes..." required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+document.getElementById("cartaCerrada").addEventListener("touchstart", abrirCarta);
+document.getElementById("cartaCerrada").addEventListener("click", abrirCarta);
+
+function abrirCarta(){
+  document.getElementById("cartaAbierta").style.display = "block";
+  document.getElementById("cartaCerrada").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+💞te amo💞
